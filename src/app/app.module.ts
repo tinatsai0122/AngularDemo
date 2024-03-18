@@ -3,16 +3,26 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
+import { Demo01Component } from './demos/demo01/demo01.component';
+import { Exo01Component } from './exos/exo01/exo01.component';
+import { Demo02Component } from './demos/demo02/demo02.component';
+import { FormsModule } from '@angular/forms';
+import { Demo03Component } from './demos/demo03/demo03.component';
+import { Demo04Component } from './demos/demo04/demo04.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    Demo01Component,
+    Exo01Component,
+    Demo02Component,
+    Demo03Component,
+    Demo04Component,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

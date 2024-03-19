@@ -1,0 +1,17 @@
+<h2>Toggle Password</h2>
+
+<p>
+  Creer un application qui affiche un formulaire de connextion ou l'utilisateur
+  peut rendre visible son mot de passe ou non.
+</p>
+
+<form action="">
+  <label for="email">Email:</label>
+  <input type="text" name="email" id="email" [(ngModel)]="email" />
+  <label for="password">Password:</label>
+  <input type="password" name="password" id="password" [(ngModel)]="password" />
+  <input type="checkbox" (change)="togglePasswordVisibility()" />
+  <label for="toggle">Show Password</label>
+  <br />
+  <button type="submit" value="Connexion"></button>
+</form>

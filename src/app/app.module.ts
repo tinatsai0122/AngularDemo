@@ -10,6 +10,10 @@ import { Demo02Component } from './demos/demo02/demo02.component';
 import { FormsModule } from '@angular/forms';
 import { Demo03Component } from './demos/demo03/demo03.component';
 import { Demo04Component } from './demos/demo04/demo04.component';
+import { Exo02Component } from './exos/exo02/exo02.component';
+import { Exo03Component } from './exos/exo03/exo03.component';
+import { SharedModule } from './shared/shared.module';
+import { DemosComponent } from './demos/demos.component';
 
 @NgModule({
   declarations: [
@@ -20,8 +24,11 @@ import { Demo04Component } from './demos/demo04/demo04.component';
     Demo02Component,
     Demo03Component,
     Demo04Component,
+    Exo02Component,
+    Exo03Component,
+    DemosComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, SharedModule],
   providers: [],
   bootstrap: [AppComponent],
 })

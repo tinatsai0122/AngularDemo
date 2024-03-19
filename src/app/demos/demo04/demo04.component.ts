@@ -12,8 +12,14 @@ export class Demo04Component {
 
   valueInput: string = 'Hello World!';
 
-  changeValue(event: InputEvent | any) {
-    this.valueInput = (event.target as HTMLInputElement).value;
+  // changeValue(event: InputEvent | any) {
+  //   this.valueInput = (event.target as HTMLInputElement).value;
+  // }
+
+  changeValue(event: Event) {
+    //const {value} =event.target as HTMLInputElement;
+    const input = event.target as HTMLInputElement;
+    this.valueInput = input.value;
   }
 
   minRange: number = 0;

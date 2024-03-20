@@ -20,7 +20,8 @@
   <ul>
     <li *ngFor="let article of articles; let i = index">
       <button (click)="removeArticle(i)">Supprimer</button>
-      {{ article.name }} - {{ article.quantity }} - {{ article.dateAdd | date }}
+      {{ article.name }} * {{ article.quantity }} -
+      {{ article.dateAdd | dateFormat }}
       <button (click)="addOne(i)">+</button>
       <button (click)="removeOne(i)">-</button>
     </li>

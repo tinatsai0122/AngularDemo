@@ -8,7 +8,8 @@ import { ToCelsiusPipe } from './pipes/to-celsius.pipe';
 import { ToFahrenheitPipe } from './pipes/to-fahrenheit.pipe';
 import { FormsModule } from '@angular/forms';
 import { TempConverterPipe } from './pipes/temp-converter.pipe';
-import { DatePipe } from './pipes/date.pipe';
+import { DateFormatPipe } from './pipes/date-format.pipe';
+
 @NgModule({
   declarations: [
     NavbarComponent,
@@ -17,7 +18,7 @@ import { DatePipe } from './pipes/date.pipe';
     ToCelsiusPipe,
     ToFahrenheitPipe,
     TempConverterPipe,
-    DatePipe,
+    DateFormatPipe,
   ],
   imports: [CommonModule, RouterLink],
   exports: [
@@ -27,7 +28,7 @@ import { DatePipe } from './pipes/date.pipe';
     ToFahrenheitPipe,
     FormsModule,
     TempConverterPipe,
-    DatePipe,
+    DateFormatPipe,
   ],
 })
 export class SharedModule {}

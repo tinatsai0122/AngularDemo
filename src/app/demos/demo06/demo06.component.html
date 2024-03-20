@@ -1,0 +1,39 @@
+<h2>Demostration 06 - Les Pipes</h2>
+<p>
+  Les pipes sont des fonctions qui permettent de transformer une expression dans
+  la vue.
+</p>
+
+<p>
+  Pour utiliser une pipe, vous devez ecrire
+  <code ngNonBindable>{{ expression | nomPipe }}</code>
+</p>
+
+<h3>Exemples :</h3>
+<h4>Pipe String</h4>
+
+<p>
+  <strong>uppercase</strong> :
+  {{ "Bonjour tout le monde. Je m'appelle Tina." | uppercase }}<br />
+  <strong>lowercase</strong> :
+  {{ "Bonjour tout le monde. Je m'appelle Tina." | lowercase }}<br />
+  <strong>titlecase</strong> :
+  {{ "Bonjour tout le monde. Je m'appelle Tina." | titlecase }}<br />
+  <strong>slice: 0:5</strong> :
+  {{ "Bonjour tout le monde. Je m'appelle Tina." | slice : 0 : 5 }}<br />
+  <strong>json</strong> : {{ "Bonjour tout le monde. Je m'appelle Tina." | json
+  }}<br />
+</p>
+
+<h4>Decimal Pipes | Number Pipe</h4>
+
+<p>
+  <strong>number: '1.2-2'</strong> : {{ 3.14159 | number : "1.2-2" }}<br />
+  <strong>percent</strong> : {{ 0.14159 | percent }}<br />
+  <strong>currency: 'EUR'</strong> : {{ 14159 | currency : "EUR" }}<br />
+</p>
+
+<p>Avant:{{ 1234.5678 }}</p>
+<p>Apres:{{ 1234.5678 | number }}</p>
+<p>Apres:{{ 1234.5678 | number : "5.2-5" }}</p>
+<p>Apres:{{ 1234.5678 | number : "5.2-5" : "fr-BE" }}</p>

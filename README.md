@@ -1,27 +1,27 @@
-# DemoAngular
+Pour activer l'exécution des scripts :
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.0.
+1. Ouvrir PowerShell en mode administrateur
+2. Exécuter la commande "set-executionpolicy remotesigned"
+3. Sélectionner "Tout" puis enter
 
-## Development server
+Création d'un projet :
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+> ng new I3_202403_WAD23\_\_Angular --routing --skip-tests --no-standalone --style=scss
 
-## Code scaffolding
+Build et démarrer l'application :
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+> ng serve --open --port=4200
 
-## Build
+Pour générer un composant :
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+> ng generate component chemin/vers/le/composant
 
-## Running unit tests
+Pour générer un module :
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+> ng generate module chemin/vers/le/module [--routing]
 
-## Running end-to-end tests
+`--routing` : permet d'ajouter le système de routing
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Pour générer un pipe :
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+> ng generate pipe chemin/vers/le/pipe

@@ -5,13 +5,17 @@
   peut rendre visible son mot de passe ou non.
 </p>
 
-<form action="">
+<form>
   <label for="email">Email:</label>
-  <input type="text" name="email" id="email" [(ngModel)]="email" />
+  <input type="email" name="email" id="email" />
+
   <label for="password">Password:</label>
-  <input type="password" name="password" id="password" [(ngModel)]="password" />
-  <input type="checkbox" (change)="togglePasswordVisibility()" />
-  <label for="toggle">Show Password</label>
-  <br />
-  <button type="submit" value="Connexion"></button>
+
+  <input [type]="inputType" />
+
+  <input type="checkbox" (input)="togglePassword()" />
+
+  <label for="toggle-password"> Afficher le mot de passe </label>
+
+  <button>Connexion</button>
 </form>

@@ -6,11 +6,8 @@ import { Component } from '@angular/core';
   styleUrl: './exo03.component.scss',
 })
 export class Exo03Component {
-  email: string = '';
-  password: string = '';
-
-  togglePasswordVisibility() {
-    const input = document.getElementById('password') as HTMLInputElement;
-    input.type = input.type === 'password' ? 'text' : 'password';
+  inputType: string = 'password';
+  togglePassword() {
+    this.inputType = this.inputType === 'password' ? 'text' : 'password';
   }
 }

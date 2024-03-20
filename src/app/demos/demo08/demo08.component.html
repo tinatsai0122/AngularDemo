@@ -1,0 +1,22 @@
+<h2>Demostration 08 - Les directives de composant</h2>
+<h3>NgStyle</h3>
+<p [ngStyle]="currentStyles">
+  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo corrupti
+  dolorem voluptatum quisquam dolore, minus blanditiis aperiam necessitatibus
+  tenetur laudantium, optio et magni, iure harum voluptatem labore veniam iusto
+  error!
+</p>
+<button (click)="toggleItalic()">Italic</button>
+<button (click)="toggleBold()">Bold</button>
+<button (click)="toggleSize()">Size</button>
+
+<h3>NgClass</h3>
+
+<p [ngClass]="{ myClass: isActive }">
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos dolor
+  nesciunt quo eligendi numquam accusantium architecto asperiores facilis magni
+  explicabo dicta ipsa voluptas obcaecati, non veniam eos ipsum optio quas?
+</p>
+
+<input type="checkbox" [(ngModel)]="isActive" name="active" />
+<label for="active">activer</label>
